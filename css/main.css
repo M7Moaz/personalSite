@@ -289,6 +289,10 @@ body {
     padding: 2rem 1rem;
     text-align: center;
     border-radius: 15px;
+    transition: .5s;
+}
+.services .my-services .servic:hover {
+    border: 1px solid var(--mainColor);
 }
 .services .my-services .servic i {
     color: var(--mainColor);
@@ -441,6 +445,23 @@ body {
     align-items: center;
     border-radius: 50%;
     cursor: pointer;
+    transition: .5s;
+}
+.footer i:hover {
+    animation: goUp .8s alternate infinite;
+    box-shadow: 1px 0 5px var(--bColor);
+    background-color: var(--bgColor);
+}
+@keyframes goUp {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 @media (max-width: 576px) {
     .footer .container p {
