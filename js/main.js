@@ -3,6 +3,7 @@ let list = document.querySelector(".list");
 
 menuIcon.onclick = () => {
   list.classList.toggle("active");
+  menuIcon.classList.toggle("fa-x");
 };
 
 function scrollToTop() {
